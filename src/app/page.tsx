@@ -19,11 +19,11 @@ export default function Home() {
               />
             </div>
             <h1 className="text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-400">
-              Olá, sou Itallo Guedes
+              Ola, eu sou Itallo Guedes
             </h1>
           </div>
           <p className="text-xl text-gray-300 mb-8">
-            Desenvolvedor full stack há 1 ano, criando soluções com Python/FastAPI no backend e Next.js com JavaScript no frontend. Inglês técnico para comunicação profissional.
+            I build smart web apps that solve real problems — fast, clean, and with purpose.
           </p>
           <div className="flex gap-4">
             <Link
