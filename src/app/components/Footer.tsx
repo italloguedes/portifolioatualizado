@@ -56,7 +56,7 @@ export default function Footer() {
             
             {/* Botão WhatsApp */}
             <Link
-              href="https://wa.me/5588996620215"
+              href="https://wa.me/5585994358083"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center px-8 py-4 text-lg font-medium text-white bg-gradient-to-r from-green-500 to-emerald-600 rounded-full transform transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-green-500/25 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 focus:ring-offset-gray-900"
