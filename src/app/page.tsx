@@ -171,14 +171,12 @@ export default function Home() {
                   className="object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                <div className="absolute bottom-0 left-0 right-0 p-6 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-                  <div className="flex gap-3">
-                    <span className="px-3 py-1 text-sm bg-blue-500/20 text-blue-600 dark:text-blue-400 rounded-full">Next.js</span>
-                    <span className="px-3 py-1 text-sm bg-purple-500/20 text-purple-600 dark:text-purple-400 rounded-full">Tailwind</span>
-                  </div>
-                </div>
               </div>
-              <div className="p-6">
+              <div className="flex gap-3 px-6 pt-4 pb-0">
+                <span className="px-3 py-1 text-sm bg-blue-500/20 text-blue-600 dark:text-blue-400 rounded-full">Next.js</span>
+                <span className="px-3 py-1 text-sm bg-purple-500/20 text-purple-600 dark:text-purple-400 rounded-full">Tailwind</span>
+              </div>
+              <div className="p-6 pt-4">
                 <h3 className="text-xl font-bold mb-2 text-blue-600 dark:text-blue-400">Site da Dra. Neirilane Aragão</h3>
                 <p className="text-gray-600 dark:text-gray-300 mb-4">
                   Site profissional para psicóloga com informações sobre serviços, agendamento e contato.
@@ -218,14 +216,12 @@ export default function Home() {
                   className="object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                <div className="absolute bottom-0 left-0 right-0 p-6 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-                  <div className="flex gap-3">
-                    <span className="px-3 py-1 text-sm bg-blue-500/20 text-blue-600 dark:text-blue-400 rounded-full">WordPress</span>
-                    <span className="px-3 py-1 text-sm bg-purple-500/20 text-purple-600 dark:text-purple-400 rounded-full">WooCommerce</span>
-                  </div>
-                </div>
               </div>
-              <div className="p-6">
+              <div className="flex gap-3 px-6 pt-4 pb-0">
+                <span className="px-3 py-1 text-sm bg-blue-500/20 text-blue-600 dark:text-blue-400 rounded-full">WordPress</span>
+                <span className="px-3 py-1 text-sm bg-purple-500/20 text-purple-600 dark:text-purple-400 rounded-full">WooCommerce</span>
+              </div>
+              <div className="p-6 pt-4">
                 <h3 className="text-xl font-bold mb-2 text-blue-600 dark:text-blue-400">Allcessorios</h3>
                 <p className="text-gray-600 dark:text-gray-300 mb-4">
                   E-commerce desenvolvido em WordPress para venda de acessórios.
@@ -265,14 +261,12 @@ export default function Home() {
                   className="object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                <div className="absolute bottom-0 left-0 right-0 p-6 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-                  <div className="flex gap-3">
-                    <span className="px-3 py-1 text-sm bg-blue-500/20 text-blue-600 dark:text-blue-400 rounded-full">Python</span>
-                    <span className="px-3 py-1 text-sm bg-purple-500/20 text-purple-600 dark:text-purple-400 rounded-full">Telegram API</span>
-                  </div>
-                </div>
               </div>
-              <div className="p-6">
+              <div className="flex gap-3 px-6 pt-4 pb-0">
+                <span className="px-3 py-1 text-sm bg-blue-500/20 text-blue-600 dark:text-blue-400 rounded-full">Python</span>
+                <span className="px-3 py-1 text-sm bg-purple-500/20 text-purple-600 dark:text-purple-400 rounded-full">Telegram API</span>
+              </div>
+              <div className="p-6 pt-4">
                 <h3 className="text-xl font-bold mb-2 text-blue-600 dark:text-blue-400">Bots de Telegram</h3>
                 <p className="text-gray-600 dark:text-gray-300 mb-4">
                   Desenvolvimento de bots automatizados para Telegram usando Python.
@@ -306,14 +300,12 @@ export default function Home() {
                   className="object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                <div className="absolute bottom-0 left-0 right-0 p-6 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-                  <div className="flex gap-3">
-                    <span className="px-3 py-1 text-sm bg-blue-500/20 text-blue-600 dark:text-blue-400 rounded-full">FastAPI</span>
-                    <span className="px-3 py-1 text-sm bg-purple-500/20 text-purple-600 dark:text-purple-400 rounded-full">Python</span>
-                  </div>
-                </div>
               </div>
-              <div className="p-6">
+              <div className="flex gap-3 px-6 pt-4 pb-0">
+                <span className="px-3 py-1 text-sm bg-blue-500/20 text-blue-600 dark:text-blue-400 rounded-full">FastAPI</span>
+                <span className="px-3 py-1 text-sm bg-purple-500/20 text-purple-600 dark:text-purple-400 rounded-full">Python</span>
+              </div>
+              <div className="p-6 pt-4">
                 <h3 className="text-xl font-bold mb-2 text-blue-600 dark:text-blue-400">Plano de Estudos FastAPI</h3>
                 <p className="text-gray-600 dark:text-gray-300 mb-4">
                   Plataforma educacional desenvolvida com FastAPI para guiar desenvolvedores no aprendizado do framework.
