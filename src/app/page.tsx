@@ -267,6 +267,46 @@ export default function Home() {
               </div>
             </div>
           </div>
+
+          {/* Projeto 4 - Plano de Estudos FastAPI */}
+          <div className="group bg-white/50 dark:bg-gray-800/50 backdrop-blur-sm rounded-lg overflow-hidden hover:transform hover:scale-105 transition-all duration-300 border border-gray-200/50 dark:border-gray-700/50 shadow-lg">
+            <div className="relative h-48">
+              <Image
+                src="/fastapi-study.jpg"
+                alt="Plano de Estudos FastAPI"
+                fill
+                className="object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            </div>
+            <div className="p-6">
+              <h3 className="text-xl font-bold mb-2 text-blue-600 dark:text-blue-400">Plano de Estudos FastAPI</h3>
+              <p className="text-gray-600 dark:text-gray-300 mb-4">
+                Plataforma educacional desenvolvida com FastAPI para guiar desenvolvedores no aprendizado do framework.
+              </p>
+              <div className="flex gap-4">
+                <Link
+                  href="https://ffxggatj.manus.space/"
+                  className="text-blue-600 dark:text-blue-400 hover:text-blue-500 dark:hover:text-blue-300 transition-colors"
+                  target="_blank"
+                >
+                  <svg
+                    className="w-6 h-6"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                    />
+                  </svg>
+                </Link>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </div>
