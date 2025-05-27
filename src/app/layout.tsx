@@ -3,6 +3,7 @@ import { Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import ThemeToggle from "./components/ThemeToggle";
 import Footer from "./components/Footer";
+import Chatbot from "./components/Chatbot";
 
 const spaceGrotesk = Space_Grotesk({ subsets: ["latin"] });
 
@@ -23,6 +24,7 @@ export default function RootLayout({
         <main className="relative min-h-screen">
           <ThemeToggle />
           {children}
+          <Chatbot />
           <Footer />
         </main>
       </body>
