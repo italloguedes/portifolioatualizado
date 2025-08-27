@@ -9,7 +9,7 @@ export default function Home() {
         <div className="absolute inset-0 bg-gradient-to-r from-blue-500/5 to-purple-500/5 dark:from-blue-500/10 dark:to-purple-500/10 blur-3xl"></div>
         <div className="relative flex flex-col items-center justify-center">
           <div className="flex flex-col md:flex-row items-center gap-6 mb-8">
-            <div className="relative w-48 h-48 rounded-full overflow-hidden ring-4 ring-blue-500/30 dark:ring-blue-500/50">
+            <div className="relative w-64 h-80 overflow-hidden ring-4 ring-blue-500/30 dark:ring-blue-500/50 rounded-[50%/35%] transform rotate-6 shadow-xl">
               <Image
                 src="/profile.jpg"
                 alt="Foto de perfil"
