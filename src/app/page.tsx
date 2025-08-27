@@ -334,6 +334,95 @@ export default function Home() {
                 </div>
               </div>
             </div>
+
+            {/* Projeto 5 - Tia Su - Natação Infantil */}
+            <div className="group relative bg-white/50 dark:bg-gray-800/50 backdrop-blur-sm rounded-xl overflow-hidden hover:transform hover:scale-[1.02] transition-all duration-300 border border-gray-200/50 dark:border-gray-700/50 shadow-lg">
+              <div className="relative h-56">
+                <Image
+                  src="/tiasu.png"
+                  alt="Tia Su - Natação Infantil"
+                  fill
+                  className="object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              </div>
+              <div className="flex gap-3 px-6 pt-4 pb-0">
+                <span className="px-3 py-1 text-sm bg-blue-500/20 text-blue-600 dark:text-blue-400 rounded-full">Next.js</span>
+                <span className="px-3 py-1 text-sm bg-purple-500/20 text-purple-600 dark:text-purple-400 rounded-full">Tailwind</span>
+              </div>
+              <div className="p-6 pt-4">
+                <h3 className="text-xl font-bold mb-2 text-blue-600 dark:text-blue-400">Tia Su - Natação Infantil</h3>
+                <p className="text-gray-600 dark:text-gray-300 mb-4">
+                  Site institucional para aulas de natação infantil, com foco em confiança e segurança.
+                </p>
+                <div className="flex items-center justify-between">
+                  <Link
+                    href="https://tiasu.vercel.app/"
+                    className="inline-flex items-center gap-2 text-blue-600 dark:text-blue-400 hover:text-blue-500 dark:hover:text-blue-300 transition-colors"
+                    target="_blank"
+                  >
+                    <span>Visitar Projeto</span>
+                    <svg
+                      className="w-4 h-4"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                      />
+                    </svg>
+                  </Link>
+                </div>
+              </div>
+            </div>
+
+            {/* Projeto 6 - Dashboards Administrativos */}
+            <div className="group relative bg-white/50 dark:bg-gray-800/50 backdrop-blur-sm rounded-xl overflow-hidden hover:transform hover:scale-[1.02] transition-all duration-300 border border-gray-200/50 dark:border-gray-700/50 shadow-lg">
+              <div className="relative h-56">
+                <Image
+                  src="/gestao.png"
+                  alt="Dashboards Administrativos"
+                  fill
+                  className="object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              </div>
+              <div className="flex gap-3 px-6 pt-4 pb-0">
+                <span className="px-3 py-1 text-sm bg-blue-500/20 text-blue-600 dark:text-blue-400 rounded-full">Next.js</span>
+                <span className="px-3 py-1 text-sm bg-purple-500/20 text-purple-600 dark:text-purple-400 rounded-full">Admin</span>
+              </div>
+              <div className="p-6 pt-4">
+                <h3 className="text-xl font-bold mb-2 text-blue-600 dark:text-blue-400">Criação de Dashboards Administrativos</h3>
+                <p className="text-gray-600 dark:text-gray-300 mb-4">
+                  Interfaces administrativas com gráficos e KPIs para acompanhamento financeiro e operacional.
+                </p>
+                <div className="flex items-center justify-between">
+                  <Link
+                    href="#contato"
+                    className="inline-flex items-center gap-2 text-blue-600 dark:text-blue-400 hover:text-blue-500 dark:hover:text-blue-300 transition-colors"
+                  >
+                    <span>Solicitar Demonstração</span>
+                    <svg
+                      className="w-4 h-4"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                      />
+                    </svg>
+                  </Link>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
