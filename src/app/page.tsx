@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import BudgetCalculator from "./components/BudgetCalculator";
 
 export default function Home() {
   return (
@@ -534,6 +535,23 @@ export default function Home() {
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Budget Section */}
+      <section id="orcamento" className="py-20 relative">
+        <div className="absolute inset-0 bg-gradient-to-b from-purple-500/5 to-blue-500/5 dark:from-purple-500/10 dark:to-blue-500/10"></div>
+        <div className="relative max-w-7xl mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-400 dark:to-purple-400">
+              Calcule seu Orçamento
+            </h2>
+            <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+              Selecione os serviços que você precisa e receba um orçamento personalizado na hora
+            </p>
+          </div>
+
+          <BudgetCalculator />
         </div>
       </section>
     </div>
