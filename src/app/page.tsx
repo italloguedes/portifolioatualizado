@@ -77,72 +77,136 @@ export default function Home() {
       </section>
 
       {/* Timeline Section */}
-      <section id="timeline" className="py-20">
-        <h2 className="text-4xl font-bold mb-12 text-center bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-400 dark:to-purple-400">
-          Minha Jornada
-        </h2>
-        <div className="max-w-4xl mx-auto">
-          <div className="relative">
-            <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-gray-200 dark:bg-gray-700"></div>
-            
-            <div className="relative mb-12">
-              <div className="flex items-center">
-                <div className="w-1/2 pr-8 text-right">
-                  <h3 className="text-xl font-bold text-blue-600 dark:text-blue-400">Início dos Estudos</h3>
-                  <p className="text-gray-600 dark:text-gray-300">Janeiro 2024</p>
-                  <p className="mt-2">Início da graduação em Análise e Desenvolvimento de Sistemas na Gran Faculdade</p>
-                </div>
-                <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-blue-500 rounded-full"></div>
-                <div className="w-1/2 pl-8"></div>
-              </div>
-            </div>
+      <section id="timeline" className="py-20 relative">
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-blue-500/5 to-transparent dark:via-blue-500/10"></div>
+        <div className="relative">
+          <h2 className="text-4xl font-bold mb-4 text-center bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-400 dark:to-purple-400">
+            Minha Jornada
+          </h2>
+          <p className="text-center text-gray-600 dark:text-gray-300 mb-16 max-w-2xl mx-auto">
+            Uma linha do tempo da minha evolução profissional e acadêmica
+          </p>
 
-            <div className="relative mb-12">
-              <div className="flex items-center">
-                <div className="w-1/2 pr-8"></div>
-                <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-purple-500 rounded-full"></div>
-                <div className="w-1/2 pl-8">
-                  <h3 className="text-xl font-bold text-purple-600 dark:text-purple-400">Análise de Dados com Python</h3>
-                  <p className="text-gray-600 dark:text-gray-300">Dezembro 2024</p>
-                  <p className="mt-2">Workshop da INFINITY SCHOOL - Visual Art Creative Center</p>
-                </div>
-              </div>
-            </div>
+          <div className="max-w-6xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
-            <div className="relative mb-12">
-              <div className="flex items-center">
-                <div className="w-1/2 pr-8 text-right">
-                  <h3 className="text-xl font-bold text-blue-600 dark:text-blue-400">Desenvolvimento Web Avançado</h3>
-                  <p className="text-gray-600 dark:text-gray-300">Junho 2024</p>
-                  <p className="mt-2">Curso de PHP, Laravel e Vue.JS na Udemy</p>
+              {/* Card 1 - Início dos Estudos */}
+              <div className="group relative bg-white/50 dark:bg-gray-800/50 backdrop-blur-sm rounded-2xl p-6 border border-gray-200/50 dark:border-gray-700/50 shadow-lg hover:shadow-xl hover:scale-[1.02] transition-all duration-300">
+                <div className="absolute -top-4 -left-4 w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center shadow-lg">
+                  <span className="text-white font-bold text-lg">1</span>
                 </div>
-                <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-blue-500 rounded-full"></div>
-                <div className="w-1/2 pl-8"></div>
+                <div className="mt-4">
+                  <div className="inline-block px-3 py-1 bg-blue-500/20 text-blue-600 dark:text-blue-400 rounded-full text-sm font-semibold mb-3">
+                    Janeiro 2024
+                  </div>
+                  <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">
+                    Início dos Estudos
+                  </h3>
+                  <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
+                    Início da graduação em Análise e Desenvolvimento de Sistemas na Gran Faculdade
+                  </p>
+                </div>
+                <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-blue-500 to-blue-600 rounded-b-2xl transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
               </div>
-            </div>
 
-            <div className="relative mb-12">
-              <div className="flex items-center">
-                <div className="w-1/2 pr-8"></div>
-                <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-purple-500 rounded-full"></div>
-                <div className="w-1/2 pl-8">
-                  <h3 className="text-xl font-bold text-purple-600 dark:text-purple-400">Desenvolvimento Full Stack</h3>
-                  <p className="text-gray-600 dark:text-gray-300">2024 - Presente</p>
-                  <p className="mt-2">Desenvolvimento de aplicações web com Python/FastAPI e Next.js</p>
+              {/* Card 2 - Desenvolvimento Web */}
+              <div className="group relative bg-white/50 dark:bg-gray-800/50 backdrop-blur-sm rounded-2xl p-6 border border-gray-200/50 dark:border-gray-700/50 shadow-lg hover:shadow-xl hover:scale-[1.02] transition-all duration-300">
+                <div className="absolute -top-4 -left-4 w-12 h-12 bg-gradient-to-br from-purple-500 to-purple-600 rounded-xl flex items-center justify-center shadow-lg">
+                  <span className="text-white font-bold text-lg">2</span>
                 </div>
+                <div className="mt-4">
+                  <div className="inline-block px-3 py-1 bg-purple-500/20 text-purple-600 dark:text-purple-400 rounded-full text-sm font-semibold mb-3">
+                    Junho 2024
+                  </div>
+                  <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">
+                    Desenvolvimento Web Avançado
+                  </h3>
+                  <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
+                    Curso de PHP, Laravel e Vue.JS na Udemy - aprofundamento em tecnologias web modernas
+                  </p>
+                </div>
+                <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-purple-500 to-purple-600 rounded-b-2xl transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
               </div>
-            </div>
 
-            <div className="relative">
-              <div className="flex items-center">
-                <div className="w-1/2 pr-8 text-right">
-                  <h3 className="text-xl font-bold text-blue-600 dark:text-blue-400">Formação</h3>
-                  <p className="text-gray-600 dark:text-gray-300">2026</p>
-                  <p className="mt-2">Previsão de conclusão da graduação</p>
+              {/* Card 3 - Análise de Dados */}
+              <div className="group relative bg-white/50 dark:bg-gray-800/50 backdrop-blur-sm rounded-2xl p-6 border border-gray-200/50 dark:border-gray-700/50 shadow-lg hover:shadow-xl hover:scale-[1.02] transition-all duration-300">
+                <div className="absolute -top-4 -left-4 w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-600 rounded-xl flex items-center justify-center shadow-lg">
+                  <span className="text-white font-bold text-lg">3</span>
                 </div>
-                <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-blue-500 rounded-full"></div>
-                <div className="w-1/2 pl-8"></div>
+                <div className="mt-4">
+                  <div className="inline-block px-3 py-1 bg-gradient-to-r from-blue-500/20 to-purple-500/20 text-blue-600 dark:text-blue-400 rounded-full text-sm font-semibold mb-3">
+                    Dezembro 2024
+                  </div>
+                  <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">
+                    Análise de Dados com Python
+                  </h3>
+                  <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
+                    Workshop da INFINITY SCHOOL - Visual Art Creative Center
+                  </p>
+                </div>
+                <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-blue-500 to-purple-600 rounded-b-2xl transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
               </div>
+
+              {/* Card 4 - Full Stack */}
+              <div className="group relative bg-white/50 dark:bg-gray-800/50 backdrop-blur-sm rounded-2xl p-6 border border-gray-200/50 dark:border-gray-700/50 shadow-lg hover:shadow-xl hover:scale-[1.02] transition-all duration-300">
+                <div className="absolute -top-4 -left-4 w-12 h-12 bg-gradient-to-br from-blue-600 to-blue-700 rounded-xl flex items-center justify-center shadow-lg">
+                  <span className="text-white font-bold text-lg">4</span>
+                </div>
+                <div className="mt-4">
+                  <div className="inline-block px-3 py-1 bg-blue-500/20 text-blue-600 dark:text-blue-400 rounded-full text-sm font-semibold mb-3">
+                    2024 - Presente
+                  </div>
+                  <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">
+                    Desenvolvimento Full Stack
+                  </h3>
+                  <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
+                    Desenvolvimento de aplicações web com Python/FastAPI e Next.js, criando soluções completas
+                  </p>
+                </div>
+                <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-blue-600 to-blue-700 rounded-b-2xl transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
+              </div>
+
+              {/* Card 5 - Criador de Conteúdo */}
+              <div className="group relative bg-white/50 dark:bg-gray-800/50 backdrop-blur-sm rounded-2xl p-6 border border-gray-200/50 dark:border-gray-700/50 shadow-lg hover:shadow-xl hover:scale-[1.02] transition-all duration-300">
+                <div className="absolute -top-4 -left-4 w-12 h-12 bg-gradient-to-br from-purple-600 to-pink-600 rounded-xl flex items-center justify-center shadow-lg">
+                  <span className="text-white font-bold text-lg">5</span>
+                </div>
+                <div className="mt-4">
+                  <div className="inline-block px-3 py-1 bg-purple-500/20 text-purple-600 dark:text-purple-400 rounded-full text-sm font-semibold mb-3">
+                    2025 - Presente
+                  </div>
+                  <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">
+                    Criador de Conteúdo
+                  </h3>
+                  <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
+                    Compartilhando conhecimento sobre desenvolvimento web e tecnologia através do meu blog
+                  </p>
+                </div>
+                <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-purple-600 to-pink-600 rounded-b-2xl transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
+              </div>
+
+              {/* Card 6 - Formação */}
+              <div className="group relative bg-gradient-to-br from-blue-500/10 to-purple-500/10 dark:from-blue-500/20 dark:to-purple-500/20 backdrop-blur-sm rounded-2xl p-6 border-2 border-blue-500/30 dark:border-blue-400/30 shadow-lg hover:shadow-xl hover:scale-[1.02] transition-all duration-300">
+                <div className="absolute -top-4 -left-4 w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-600 rounded-xl flex items-center justify-center shadow-lg">
+                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 14l9-5-9-5-9 5 9 5z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
+                  </svg>
+                </div>
+                <div className="mt-4">
+                  <div className="inline-block px-3 py-1 bg-gradient-to-r from-blue-500/30 to-purple-500/30 text-blue-600 dark:text-blue-400 rounded-full text-sm font-semibold mb-3">
+                    2026
+                  </div>
+                  <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">
+                    Formação Acadêmica
+                  </h3>
+                  <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
+                    Previsão de conclusão da graduação em Análise e Desenvolvimento de Sistemas
+                  </p>
+                </div>
+                <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-blue-500 to-purple-600 rounded-b-2xl transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
+              </div>
+
             </div>
           </div>
         </div>
@@ -161,6 +225,52 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {/* Projeto 0 - Blog */}
+            <div className="group relative bg-white/50 dark:bg-gray-800/50 backdrop-blur-sm rounded-xl overflow-hidden hover:transform hover:scale-[1.02] transition-all duration-300 border border-gray-200/50 dark:border-gray-700/50 shadow-lg">
+              <div className="relative h-56 bg-gradient-to-br from-blue-600 via-purple-600 to-pink-600 flex items-center justify-center">
+                <div className="text-white text-center p-6">
+                  <svg className="w-20 h-20 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
+                  </svg>
+                  <h3 className="text-2xl font-bold">Itallo Guedes</h3>
+                  <p className="text-blue-100">Blog de Tecnologia</p>
+                </div>
+                <div className="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              </div>
+              <div className="flex gap-3 px-6 pt-4 pb-0">
+                <span className="px-3 py-1 text-sm bg-blue-500/20 text-blue-600 dark:text-blue-400 rounded-full">Blog</span>
+                <span className="px-3 py-1 text-sm bg-purple-500/20 text-purple-600 dark:text-purple-400 rounded-full">Conteúdo</span>
+              </div>
+              <div className="p-6 pt-4">
+                <h3 className="text-xl font-bold mb-2 text-blue-600 dark:text-blue-400">Itallo Guedes Blog</h3>
+                <p className="text-gray-600 dark:text-gray-300 mb-4">
+                  Meu blog pessoal onde compartilho conhecimentos sobre desenvolvimento web, tecnologia e programação.
+                </p>
+                <div className="flex items-center justify-between">
+                  <Link
+                    href="https://www.italloguedes.blog"
+                    className="inline-flex items-center gap-2 text-blue-600 dark:text-blue-400 hover:text-blue-500 dark:hover:text-blue-300 transition-colors"
+                    target="_blank"
+                  >
+                    <span>Visitar Blog</span>
+                    <svg
+                      className="w-4 h-4"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                      />
+                    </svg>
+                  </Link>
+                </div>
+              </div>
+            </div>
+
             {/* Projeto 1 - Site da Psicóloga */}
             <div className="group relative bg-white/50 dark:bg-gray-800/50 backdrop-blur-sm rounded-xl overflow-hidden hover:transform hover:scale-[1.02] transition-all duration-300 border border-gray-200/50 dark:border-gray-700/50 shadow-lg">
               <div className="relative h-56">
