@@ -166,23 +166,23 @@ export default function Home() {
                 <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-blue-600 to-blue-700 rounded-b-2xl transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
               </div>
 
-              {/* Card 5 - Criador de Conteúdo */}
+              {/* Card 5 - Django */}
               <div className="group relative bg-white/50 dark:bg-gray-800/50 backdrop-blur-sm rounded-2xl p-6 border border-gray-200/50 dark:border-gray-700/50 shadow-lg hover:shadow-xl hover:scale-[1.02] transition-all duration-300">
-                <div className="absolute -top-4 -left-4 w-12 h-12 bg-gradient-to-br from-purple-600 to-pink-600 rounded-xl flex items-center justify-center shadow-lg">
+                <div className="absolute -top-4 -left-4 w-12 h-12 bg-gradient-to-br from-green-600 to-emerald-600 rounded-xl flex items-center justify-center shadow-lg">
                   <span className="text-white font-bold text-lg">5</span>
                 </div>
                 <div className="mt-4">
-                  <div className="inline-block px-3 py-1 bg-purple-500/20 text-purple-600 dark:text-purple-400 rounded-full text-sm font-semibold mb-3">
-                    2025 - Presente
+                  <div className="inline-block px-3 py-1 bg-green-500/20 text-green-600 dark:text-green-400 rounded-full text-sm font-semibold mb-3">
+                    2024 - Presente
                   </div>
                   <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">
-                    Criador de Conteúdo
+                    Estudo e Prática de Django
                   </h3>
                   <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-                    Compartilhando conhecimento sobre desenvolvimento web e tecnologia através do meu blog
+                    Desenvolvimento de aplicações web com Django Framework, incluindo a criação do meu blog pessoal de tecnologia
                   </p>
                 </div>
-                <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-purple-600 to-pink-600 rounded-b-2xl transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
+                <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-green-600 to-emerald-600 rounded-b-2xl transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
               </div>
 
               {/* Card 6 - Formação */}
@@ -238,13 +238,13 @@ export default function Home() {
                 <div className="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </div>
               <div className="flex gap-3 px-6 pt-4 pb-0">
-                <span className="px-3 py-1 text-sm bg-blue-500/20 text-blue-600 dark:text-blue-400 rounded-full">Blog</span>
-                <span className="px-3 py-1 text-sm bg-purple-500/20 text-purple-600 dark:text-purple-400 rounded-full">Conteúdo</span>
+                <span className="px-3 py-1 text-sm bg-green-500/20 text-green-600 dark:text-green-400 rounded-full">Django</span>
+                <span className="px-3 py-1 text-sm bg-blue-500/20 text-blue-600 dark:text-blue-400 rounded-full">Python</span>
               </div>
               <div className="p-6 pt-4">
                 <h3 className="text-xl font-bold mb-2 text-blue-600 dark:text-blue-400">Itallo Guedes Blog</h3>
                 <p className="text-gray-600 dark:text-gray-300 mb-4">
-                  Meu blog pessoal onde compartilho conhecimentos sobre desenvolvimento web, tecnologia e programação.
+                  Blog desenvolvido com Django onde compartilho conhecimentos sobre desenvolvimento web, tecnologia e programação.
                 </p>
                 <div className="flex items-center justify-between">
                   <Link
