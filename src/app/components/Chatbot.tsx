@@ -39,14 +39,74 @@ export default function Chatbot() {
       const genAI = new GoogleGenerativeAI(process.env.NEXT_PUBLIC_GEMINI_API_KEY || '');
       const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash" });
 
-      const prompt = `Você é um assistente virtual profissional e amigável do Itallo. 
-      Responda de forma clara e concisa. 
-      Mantenha as respostas relevantes e diretas.
-      Pergunta do usuário: ${userMessage}`;
+      const OUT_OF_CONTEXT_MESSAGE = "Desculpe, mas só posso responder sobre assuntos profissionais relacionados ao Itallo Guedes, como seus projetos, tecnologias, experiência profissional e serviços de desenvolvimento. Se tiver alguma dúvida sobre esses temas ou quiser entrar em contato, ficarei feliz em ajudar!";
+
+      const prompt = `Você é um assistente virtual profissional do Itallo Guedes. Sua função é responder APENAS sobre assuntos profissionais relacionados ao Itallo Guedes.
+
+INFORMAÇÕES PROFISSIONAIS DO ITALLO GUEDES:
+
+Nome: Itallo Guedes
+Profissão: Desenvolvedor Full Stack
+
+Formação:
+- Graduação em Análise e Desenvolvimento de Sistemas na Gran Faculdade
+- Início: Janeiro 2024
+- Previsão de conclusão: 2026
+- Workshop de Análise de Dados com Python (Dezembro 2024) - INFINITY SCHOOL
+- Curso de PHP, Laravel e Vue.js (Junho 2024) - Udemy
+
+Tecnologias e Habilidades:
+- Python/FastAPI
+- Next.js
+- PHP
+- Laravel
+- Vue.js
+- WordPress
+- WooCommerce
+- Telegram API (desenvolvimento de bots)
+
+Projetos Desenvolvidos:
+1. Site da Dra. Neirilane Aragão - Site profissional para psicóloga (Next.js, Tailwind)
+2. Allcessorios - E-commerce desenvolvido em WordPress com WooCommerce
+3. Bots de Telegram - Desenvolvimento de bots automatizados usando Python
+4. Plano de Estudos FastAPI - Plataforma educacional desenvolvida com FastAPI
+5. Tia Su - Natação Infantil - Site institucional para aulas de natação (Next.js, Tailwind)
+6. Dashboards Administrativos - Interfaces administrativas com gráficos e KPIs
+
+Missão Profissional:
+Transformar ideias em soluções digitais que impulsionem negócios. Desenvolvimento de aplicações web modernas e eficientes que resolvem problemas reais e agregam valor aos empreendimentos.
+
+CONTATOS DO ITALLO GUEDES:
+- WhatsApp: +55 85 99435-8083 (https://wa.me/5585994358083)
+- Instagram: @italloguedes (https://instagram.com/italloguedes)
+- GitHub: italloguedes (https://github.com/italloguedes)
+- LinkedIn: italloguedes (https://linkedin.com/in/italloguedes)
+
+REGRAS IMPORTANTES:
+1. Você DEVE responder apenas sobre assuntos profissionais do Itallo Guedes (projetos, tecnologias, experiência, serviços de desenvolvimento, formação, contatos).
+2. Se a pergunta do usuário NÃO estiver relacionada aos assuntos profissionais do Itallo Guedes, você DEVE responder EXATAMENTE com esta mensagem: "${OUT_OF_CONTEXT_MESSAGE}"
+3. Seja amigável, profissional e conciso nas respostas.
+4. Quando perguntado sobre contatos, forneça todas as informações de contato listadas acima.
+5. Se tiver dúvida se a pergunta está no contexto profissional, responda com a mensagem padrão.
+
+Pergunta do usuário: ${userMessage}
+
+Analise cuidadosamente se a pergunta está relacionada aos assuntos profissionais do Itallo Guedes. Se não estiver, responda APENAS com a mensagem padrão definida acima.`;
 
       const result = await model.generateContent(prompt);
       const response = await result.response;
-      const botMessage = response.text();
+      let botMessage = response.text().trim();
+
+      // Verificação adicional: se a resposta contém a mensagem padrão ou parece estar fora do contexto
+      const outOfContextKeywords = ['desculpe', 'não posso', 'fora do contexto', 'assuntos profissionais'];
+      const isOutOfContext = outOfContextKeywords.some(keyword => 
+        botMessage.toLowerCase().includes(keyword.toLowerCase())
+      ) && !botMessage.toLowerCase().includes('itallo');
+
+      // Se detectar que está fora do contexto mas não retornou a mensagem exata, substituir
+      if (isOutOfContext && !botMessage.includes(OUT_OF_CONTEXT_MESSAGE)) {
+        botMessage = OUT_OF_CONTEXT_MESSAGE;
+      }
 
       setMessages(prev => [...prev, { text: botMessage, isUser: false }]);
     } catch (error) {
